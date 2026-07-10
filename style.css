@@ -1,3 +1,6 @@
+*{
+    font-family: "Inter", sans-serif;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -20,15 +23,102 @@ a{
     color: #FFFFFF;
     align-items: center;
     padding: 10px 8%;
-    width: 105px;
+    width: 150px;
     border: none;
     border-radius: 8px;
 }
 
 header{
-    background-image: url('./assets/banner.jpg');
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.90) 0%,
+            rgba(0, 0, 0, 0.55) 35%,
+            rgba(0, 0, 0, 0.30) 70%,
+            rgba(0, 0, 0, 0.10) 100%
+        ), url('./assets/banner.jpg');
     height: 90vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header-content{
+    text-align: center;
+    display: grid;
+    gap: 20px;
+
+}
+.header-content button{
+    width: 199px;
+    margin-left: 37%;
+    padding: 15px;
+    margin-top: 350px;
+}
+.header-content h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+
+.Speakers{
+    width: 80%;
+    margin: 120px auto;
+}
+
+.Speakers h2{
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000102;
+}
+
+.Speakers-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.Speakers-card{
+    background: #FFFFFF;
+    border: 1px solid #e7e7e7;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+
+.Speakers-card img{
     width: 100%;
+    height: 375px;
+    object-fit: contain;
+    display: block;
+}
+
+.Speakers-info{
+    padding: 24px;
+}
+
+.Speakers-info h5{
+    color: #2563EB;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.Speakers-info h3{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #0D1B2A;
+}
+
+.Speakers-info p{
+    color: #575757;
+    font-size: 16px;
 }
