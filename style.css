@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+}
+.common-btn{
+    background-color: #1D4ED8;
+    color: #FFFFFF;
+    align-items: center;
+    padding: 10px;
+    border-radius: 9px;
+    width: 105px;
+
+}
