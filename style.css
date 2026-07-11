@@ -215,3 +215,290 @@ header{
     color: #FFFFFF;
     border: none;
 }
+
+.tracks-section{
+
+    background:#fff;
+    padding:80px 8%;
+    text-align:center;
+
+}
+
+.section-title h2{
+
+    font-size:38px;
+    color:#1e3a8a;
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#666;
+    margin-bottom:50px;
+    font-size:17px;
+
+}
+
+.track-container{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.track-card{
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 420px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.track-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.icon{
+
+    font-size:50px;
+    margin-bottom:20px;
+
+}
+
+.track-card h3{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+.track-card p{
+
+    color:#666;
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:20px;
+
+}
+
+.track-card ul{
+     list-style: none !important;
+    padding: 0 !important;
+    margin: 15px 0 !important;
+    display: block !important;
+    text-align: left;   
+}
+
+.track-card ul li{
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-size: 0.95rem;
+    color: #555;
+    padding-left: 15px;
+    position: relative;
+
+}
+
+.track-card a{
+    display: block;
+    text-align: center;
+    background: #007acc;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 600
+}
+
+.track-card a:hover{
+
+    background:#1d4ed8;
+
+}
+
+@media(max-width:992px){
+
+.track-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:600px){
+
+.track-container{
+
+grid-template-columns:1fr;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+}
+
+
+/* Main Footer Container */
+.site-footer {
+    background-color: #12161f; /* ডার্ক ব্যাকগ্রাউন্ড (ছবির সাথে মিল রেখে) */
+    color: #ffffff;
+    padding: 60px 0 30px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: table; /* WeasyPrint ও ব্রাউজার উভয়ের সামঞ্জস্যের জন্য টেবিল লেআউট */
+    width: 100%;
+}
+
+.footer-column {
+    display: table-cell;
+    width: 33.33%;
+    vertical-align: top;
+}
+
+/* Column 1: Brand Section */
+.footer-logo {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.logo-box {
+    display: inline-block;
+    background-color: #0b5ed7; /* লোগোর নীল ব্যাকগ্রাউন্ড */
+    color: white;
+    padding: 10px 12px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.logo-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+}
+
+.logo-text span {
+    font-size: 1.2rem;
+    color: #a0aec0;
+    font-weight: 500;
+}
+
+.footer-socials a {
+    color: #5bb3ff; /* সোশ্যাল আইকনের হালকা নীল কালার */
+    font-size: 1.5rem;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
+}
+
+/* Column 2: Quick Links Section */
+.footer-column h3 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-weight: 600;
+}
+
+.links-grid {
+    display: block;
+    width: 100%;
+}
+
+.links-grid ul {
+    display: inline-block;
+    width: 45%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+}
+
+.links-grid li {
+    margin-bottom: 12px;
+}
+
+.links-grid a {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.links-grid a:hover {
+    color: #ffffff;
+}
+
+/* Column 3: Contact Section */
+.contact-email {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-email:hover {
+    color: #ffffff;
+}
+
+.contact-icon {
+    color: #a0aec0;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 25px 40px 0 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #718096;
+}
+.footer-brand-img {
+    height: 45px;
+    width: auto;
+    display: block;
+}
